@@ -1,0 +1,32 @@
+{
+  "name": "tdc-nodestreams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example:promise": "node --no-warnings examples/promise",
+    "example:streams": "node examples/streams",
+    "example:full-streams": "node examples/full-streams",
+    "example:pm2:promise": "npx pm2 start examples/promise.js --node-args=\"--no-warnings\" --no-autorestart",
+    "example:pm2:streams": "npx pm2 start examples/streams.js --no-autorestart",
+    "example:pm2:full-streams": "npx pm2 start examples/full-streams.js --no-autorestart",
+    "example:pm2:monit": "npx pm2 monit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.739.0",
+    "csvtojson": "^2.0.10",
+    "json-to-csv-stream": "^1.1.0",
+    "pm2": "^4.4.1"
+  }
+}
